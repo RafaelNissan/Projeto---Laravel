@@ -13,32 +13,32 @@ use Illuminate\Support\Facades\Hash;
 #[Title('Cadastro')]
 class Register extends Component
 {
-    // Propriedades do formulário
+    //* Propriedades do formulário
     public $name = '';
     public $email = '';
     public $password = '';
-    public $password_confirmation = ''; // Para confirmar a senha
+    public $password_confirmation = ''; //* Para confirmar a senha
 
     public function register()
     {
-        // 1. Validação
+        //* Validação
         $this->validate([
             'name' => 'required|min:3',
-            'email' => 'required|email|unique:users', // unique:users verifica se já existe no banco
-            'password' => 'required|min:6|confirmed', // confirmed procura por um campo password_confirmation
+            'email' => 'required|email|unique:users', //* verifica se já existe
+            'password' => 'required|min:6|confirmed', //* precisa confirmar a senha
         ]);
 
-        // 2. Criação do Usuário
+        //* Criação do Usuário
         $user = User::create([
             'name' => $this->name,
             'email' => $this->email,
-            'password' => Hash::make($this->password), // Criptografa a senha
+            'password' => Hash::make($this->password), //* criptografa a senha
         ]);
 
-        // 3. Login Automático
+        //* loga direto
         Auth::login($user);
 
-        // 4. Redirecionamento
+        //* Redirecionamento
         return $this->redirect('/dashboard', navigate: true);
     }
 

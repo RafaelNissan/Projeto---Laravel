@@ -23,12 +23,12 @@ class Home extends Component
 
         # "$this->variavel = valor" significa: estamos especificando a variavel que esta na classe Home que vai receber um valor ou um conteudo
         $this->categories = [
-            ['name' => 'Celulares', 'image' => 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=200&h=200&fit=crop'],
-            ['name' => 'Notebooks', 'image' => 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=200&h=200&fit=crop'],
-            ['name' => 'Tablets', 'image' => 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=200&h=200&fit=crop'],
-            ['name' => 'Audio', 'image' => 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200&h=200&fit=crop'],
-            ['name' => 'Acessórios', 'image' => 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=200&h=200&fit=crop'],
-            ['name' => 'Gaming', 'image' => 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=200&h=200&fit=crop'],
+            ['name' => 'Celulares', 'image' => 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=200&q=80'],
+            ['name' => 'Notebooks', 'image' => 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=200&q=80'],
+            ['name' => 'Tablets', 'image' => 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=200&q=80'],
+            ['name' => 'Audio', 'image' => 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=200&q=80'],
+            ['name' => 'Acessórios', 'image' => 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=200&q=80'],
+            ['name' => 'Gaming', 'image' => 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=200&q=80'],
         ];
 
         $this->products = [
@@ -37,7 +37,7 @@ class Home extends Component
                 'description' => '256GB - Space Black',
                 'price' => 999,
                 'old_price' => 1099,
-                'image' => 'https://images.unsplash.com/photo-1673332788244-c68da781898b?w=400&h=400&fit=crop',
+                'image' => 'https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=400&q=80',
                 'tag' => 'Vendido',
                 'rating' => 5
             ],
@@ -46,7 +46,7 @@ class Home extends Component
                 'description' => 'Noise Cancelling - Silver',
                 'price' => 348,
                 'old_price' => null,
-                'image' => 'https://images.unsplash.com/photo-1670065314432-6f6788cbc4d1?w=400&h=400&fit=crop',
+                'image' => 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80',
                 'tag' => null,
                 'rating' => 5
             ],
@@ -55,7 +55,7 @@ class Home extends Component
                 'description' => '11" Display - Graphite',
                 'price' => 899,
                 'old_price' => null,
-                'image' => 'https://images.unsplash.com/photo-1650367310179-e1b5b8e453c3?w=400&h=400&fit=crop',
+                'image' => 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=400&q=80',
                 'tag' => 'NEW',
                 'rating' => 4
             ],
@@ -64,7 +64,7 @@ class Home extends Component
                 'description' => '128GB - Obsidian',
                 'price' => 599,
                 'old_price' => null,
-                'image' => 'https://images.unsplash.com/photo-1667462444062-0941dfcb303c?w=400&h=400&fit=crop',
+                'image' => 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=400&q=80',
                 'tag' => null,
                 'rating' => 5
             ],

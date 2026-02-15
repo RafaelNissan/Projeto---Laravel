@@ -1,5 +1,5 @@
 <div class="min-h-screen bg-gray-100 p-8">
-    {{-- caixa principal branca --}}
+    {{-- *caixa principal branca --}}
     <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">
 
         {{-- mensagem de boas-vindas --}}
@@ -22,10 +22,13 @@
                 <h3 class="font-bold text-green-700">Saldo</h3>
                 <p class="text-sm text-green-600">R$ 0,00</p>
             </div>
-            <div class="bg-purple-50 p-6 rounded-lg border border-purple-100">
-                <h3 class="font-bold text-purple-700">Mensagens</h3>
-                <p class="text-sm text-purple-600">Nenhuma mensagem nova</p>
-            </div>
+            <a href="{{ route('products.index') }}" class="block" wire:navigate>
+                <div
+                    class="bg-purple-50 p-6 rounded-lg border border-purple-100 hover:bg-purple-100 transition-colors cursor-pointer">
+                    <h3 class="font-bold text-purple-700">Produtos</h3>
+                    <p class="text-sm text-purple-600">Gerenciar produtos</p>
+                </div>
+            </a>
         </div>
 
         {{-- botão de sair (logout) --}}
@@ -34,7 +37,8 @@
                 &larr; Voltar para a Home
             </a>
 
-            <button wire:click="logout" class="bg-red-50 text-red-600 px-4 py-2 rounded-lg hover:bg-red-100 font-bold transition-colors">
+            <button wire:click="logout"
+                class="bg-red-50 text-red-600 px-4 py-2 rounded-lg hover:bg-red-100 font-bold transition-colors">
                 Sair da Conta
             </button>
         </div>
